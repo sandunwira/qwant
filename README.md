@@ -192,35 +192,3 @@ await runEndpoint('videos', () => qwant.videos('wikipedia'));
 await runEndpoint('news', () => qwant.news('wikipedia'));
 await runEndpoint('suggestions', () => qwant.suggest('wikipedia'));
 ```
-
-## Testing from another project
-
-To test a local package installation:
-
-```powershell
-cd "D:\Projects\npm Packages\qwant"
-npm pack
-
-cd "D:\Projects\npm Packages\qwant-test"
-npm init -y
-npm install "D:\Projects\npm Packages\qwant\qwant-1.0.0.tgz"
-npm pkg set type=module
-```
-
-Then create `index.js` in the test project:
-
-```js
-import Qwant from 'qwant-search';
-
-const qwant = new Qwant();
-console.dir(await qwant.videos('wikipedia'), { depth: null });
-```
-
-Run it with:
-
-```powershell
-node index.js
-```
-
-The test project's `package.json` must contain `"type": "module"` when using
-ESM syntax in `.js` files.
