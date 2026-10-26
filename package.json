@@ -1,0 +1,33 @@
+{
+  "name": "qwant",
+  "version": "1.0.0",
+  "description": "An unofficial, dependency-free Node.js client for the Qwant search API.",
+  "keywords": [
+    "qwant",
+    "search-engine"
+  ],
+  "homepage": "https://github.com/sandunwira/qwant#readme",
+  "bugs": {
+    "url": "https://github.com/sandunwira/qwant/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandunwira/qwant.git"
+  },
+  "license": "ISC",
+  "author": "Sandun Wiratunga",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "default": "./index.js"
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
