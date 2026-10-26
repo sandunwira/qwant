@@ -1,6 +1,6 @@
 {
   "name": "qwant-search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An unofficial, dependency-free Node.js client for the Qwant search API.",
   "keywords": [
     "qwant",
