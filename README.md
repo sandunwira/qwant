@@ -9,13 +9,13 @@ Node.js 18 or newer.
 ## Installation
 
 ```bash
-npm install qwant
+npm install qwant-search
 ```
 
 ## Usage
 
 ```js
-import Qwant from 'qwant';
+import Qwant from 'qwant-search';
 
 const qwant = new Qwant();
 
@@ -210,7 +210,7 @@ npm pkg set type=module
 Then create `index.js` in the test project:
 
 ```js
-import Qwant from 'qwant';
+import Qwant from 'qwant-search';
 
 const qwant = new Qwant();
 console.dir(await qwant.videos('wikipedia'), { depth: null });
